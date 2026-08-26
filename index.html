@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baxter & Greene — Market Deli & Cafe | Dublin 1</title>
+  <meta name="description" content="Baxter & Greene Market Deli & Cafe located on the top floor of Dunnes Stores Henry Street, Ilac Centre, Dublin. Famous for under €6 cooked Irish breakfasts, coconut cappuccinos, artisanal brown soda bread & rooftop patio dining.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container bar-content">
+      <div class="bar-left">
+        <span class="status-indicator-dot" id="liveStatusDot"></span>
+        <span id="liveStatusText">Open Today · Closes 5:30 PM</span>
+        <span class="bar-divider">•</span>
+        <span class="location-tag">📍 Top Floor, Dunnes Stores Henry Street (Ilac Centre)</span>
+      </div>
+      <div class="bar-right">
+        <a href="tel:+35315653580" class="bar-link">📞 +353 1 565 3580</a>
+        <span class="patio-badge">☀️ Rooftop Patio Open</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="header" id="mainHeader">
+    <nav class="navbar container">
+      <a href="#home" class="brand-logo">
+        <img src="images/logo.jpg" alt="Baxter & Greene Market Deli Logo" class="brand-logo-img">
+        <div class="brand-text">
+          <span class="brand-name">BAXTER & GREENE</span>
+          <span class="brand-sub">MARKET DELI & CAFE</span>
+        </div>
+      </a>
+
+      <!-- Full-Screen Mobile Drawer / Desktop Navbar -->
+      <div class="nav-links" id="navLinks">
+        <div class="mobile-nav-top">
+          <div class="brand-logo">
+            <img src="images/logo.jpg" alt="Baxter & Greene Market Deli Logo" class="brand-logo-img">
+            <span class="brand-name" style="color: #ffffff;">BAXTER & GREENE</span>
+          </div>
+          <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close navigation">✕</button>
+        </div>
+
+        <a href="#home" class="nav-item active"><span class="mobile-num">01</span><span>Home</span></a>
+        <a href="#about" class="nav-item"><span class="mobile-num">02</span><span>Our Story</span></a>
+        <a href="#menu" class="nav-item"><span class="mobile-num">03</span><span>Fresh Deli Menu</span></a>
+        <a href="#patio" class="nav-item"><span class="mobile-num">04</span><span>Rooftop Patio</span></a>
+        <a href="#reviews" class="nav-item"><span class="mobile-num">05</span><span>Reviews</span></a>
+        <a href="#location" class="nav-item"><span class="mobile-num">06</span><span>Find Us</span></a>
+        
+        <div class="mobile-nav-bottom">
+          <button class="btn btn-primary btn-block" id="openTakeawayBtn">Order Takeaway ↗</button>
+          <a href="https://www.google.com/maps/search/?api=1&query=Baxter+%26+Greene+Dunnes+Stores+Henry+Street+Dublin" target="_blank" class="mobile-maps-btn">📍 Open Directions in Google Maps ↗</a>
+        </div>
+      </div>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span class="star-rating">★ 3.9</span>
+          <span class="tag-divider">•</span>
+          <span>77 Verified Google Reviews</span>
+          <span class="tag-divider">•</span>
+          <span class="badge-price">€1–20 per person</span>
+        </div>
+
+        <h1 class="hero-title">Dublin’s Premier Top-Floor <span class="highlight-serif">Market Deli</span> & Cafe</h1>
+        <p class="hero-subtitle">
+          Nestled on the top floor of <strong>Dunnes Stores Henry Street (Ilac Centre)</strong>. Experience wholesome cooked Irish breakfasts under €6, freshly baked homemade brown soda bread, specialty coconut cappuccinos, and sunlit rooftop patio dining.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-gold btn-lg">
+            <span>Explore Fresh Menu</span>
+            <span class="btn-icon">➔</span>
+          </a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Baxter+%26+Greene+Dunnes+Stores+Henry+Street+Dublin" target="_blank" class="btn btn-outline-light btn-lg">
+            <span>Get Store Directions</span>
+            <span class="btn-icon">🗺️</span>
+          </a>
+        </div>
+
+        <div class="hero-features-strip">
+          <div class="feature-chip">
+            <span class="chip-icon">🍳</span>
+            <div class="chip-text">
+              <strong>Irish Breakfast Special</strong>
+              <span>5 Cooked Items + Drink & Bread under €6</span>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <span class="chip-icon">🍞</span>
+            <div class="chip-text">
+              <strong>Handcrafted Bakery</strong>
+              <span>Iconic Homemade Brown Soda Bread</span>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <span class="chip-icon">☕</span>
+            <div class="chip-text">
+              <strong>Specialty Coffee</strong>
+              <span>Signature Coconut Cappuccinos</span>
+            </div>
+          </div>
+          <div class="feature-chip">
+            <span class="chip-icon">🌤️</span>
+            <div class="chip-text">
+              <strong>Outdoor Dining</strong>
+              <span>Spacious Rooftop Patio Terrace</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-card-main">
+          <img src="images/hero.png" alt="Baxter & Greene Market Deli Interior" class="hero-img">
+          <div class="floating-badge badge-top-right">
+            <span class="badge-icon">📍</span>
+            <span>Unit 10/12, Central Mall</span>
+          </div>
+          <div class="floating-badge badge-bottom-left">
+            <div class="avatar-group">
+              <span class="avatar">Dw</span>
+              <span class="avatar">LZ</span>
+              <span class="avatar">FB</span>
+            </div>
+            <div class="badge-info">
+              <strong>"Excellent consistently!"</strong>
+              <span>Top-rated by Dublin locals & visitors</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / Story Section -->
+  <section class="section story-section" id="about">
+    <div class="container story-container">
+      <div class="story-visual">
+        <img src="images/patio.png" alt="Baxter & Greene Rooftop Patio & Dining Atmosphere" class="story-img">
+        <div class="story-floating-card">
+          <span class="card-tag">Dunnes Stores Henry Street</span>
+          <strong>Top Floor Market Deli</strong>
+        </div>
+      </div>
+
+      <div class="story-content">
+        <span class="section-tag">Welcome to Baxter & Greene</span>
+        <h2 class="section-title">A Peaceful Culinary Oasis Above <span class="highlight-serif">Henry Street</span></h2>
+        <p class="story-lead">
+          Located inside Dunnes Stores at the heart of the Ilac Shopping Centre, Baxter & Greene offers a bright, spacious, and immaculate setting away from the busy city streets.
+        </p>
+        <p class="story-text">
+          Whether you're stopping by for our famous 5-item cooked Irish breakfast under €6, enjoying a slice of freshly baked lasagne, or sipping a signature coconut cappuccino on our outdoor rooftop terrace, we provide honest, wholesome comfort food prepared fresh every single day.
+        </p>
+
+        <div class="story-stats">
+          <div class="stat-box">
+            <span class="stat-number">€5.95</span>
+            <span class="stat-label">Full Cooked Breakfast & Beverage</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">3.9 ★</span>
+            <span class="stat-label">77 Verified Google Reviews</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">Daily</span>
+            <span class="stat-label">Closes 5:30 PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deli & Menu Section with Unique Dish Images -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Fresh Daily Selection</span>
+        <h2 class="section-title">Market Deli <span class="highlight-serif">& Culinary Highlights</span></h2>
+        <p class="section-desc">Prepared fresh every morning in our top-floor kitchen using quality local Irish ingredients.</p>
+      </div>
+
+      <!-- Menu Filter Tabs -->
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-category="all">All Specials</button>
+        <button class="tab-btn" data-category="breakfast">Breakfast Specials</button>
+        <button class="tab-btn" data-category="deli">Hot Market Deli & Lasagne</button>
+        <button class="tab-btn" data-category="bakery">Fresh Bakery & Scones</button>
+        <button class="tab-btn" data-category="coffee">Specialty Beverages</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menuGrid">
+
+        <!-- Item 1: Breakfast -->
+        <div class="menu-card" data-category="breakfast">
+          <div class="card-badge gold">Value Champion</div>
+          <div class="card-image-wrap">
+            <img src="images/breakfast.png" alt="5 Item Irish Breakfast Plate" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title-row">
+              <h3>Full Cooked Irish Breakfast</h3>
+              <span class="price">€5.95</span>
+            </div>
+            <p class="card-desc">Choice of 5 cooked items (sausages, bacon, fried eggs, tomato, black pudding, hash browns), homemade brown soda bread or toast, plus hot tea or coffee.</p>
+            <div class="card-meta">
+              <span class="tag">Under €6</span>
+              <span class="tag">Includes Beverage</span>
+              <span class="tag">Local Favorite</span>
+            </div>
+            <button class="btn-card-action view-details-btn" data-item="full-irish">View Item Details ➔</button>
+          </div>
+        </div>
+
+        <!-- Item 2: Coffee -->
+        <div class="menu-card" data-category="coffee">
+          <div class="card-badge">Signature Brew</div>
+          <div class="card-image-wrap">
+            <img src="images/cappuccino.png" alt="Signature Coconut Cappuccino" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title-row">
+              <h3>Signature Coconut Cappuccino</h3>
+              <span class="price">€3.95</span>
+            </div>
+            <p class="card-desc">Double-shot espresso micro-foamed with steamed organic coconut milk and finished with toasted coconut flakes.</p>
+            <div class="card-meta">
+              <span class="tag">Dairy Free Option</span>
+              <span class="tag">Craft Roast</span>
+            </div>
+            <button class="btn-card-action view-details-btn" data-item="coconut-cap">View Item Details ➔</button>
+          </div>
+        </div>
+
+        <!-- Item 3: Lasagne -->
+        <div class="menu-card" data-category="deli">
+          <div class="card-badge green">Chef's Special</div>
+          <div class="card-image-wrap">
+            <img src="images/lasagne.png" alt="Homemade Beef Lasagne" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title-row">
+              <h3>Traditional Homemade Beef Lasagne</h3>
+              <span class="price">€8.50</span>
+            </div>
+            <p class="card-desc">Slow-cooked Irish beef ragù layered between egg pasta sheets, nutmeg béchamel sauce, melted cheddar & garlic sourdough bread.</p>
+            <div class="card-meta">
+              <span class="tag">Hot Deli</span>
+              <span class="tag">100% Irish Beef</span>
+            </div>
+            <button class="btn-card-action view-details-btn" data-item="lasagne">View Item Details ➔</button>
+          </div>
+        </div>
+
+        <!-- Item 4: Scones -->
+        <div class="menu-card" data-category="bakery">
+          <div class="card-badge">Baked Daily</div>
+          <div class="card-image-wrap">
+            <img src="images/scones.png" alt="Freshly Baked Irish Fruit Scones" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title-row">
+              <h3>Freshly Baked Fruit Scones</h3>
+              <span class="price">€2.95</span>
+            </div>
+            <p class="card-desc">Warm oven-baked fruit scones served with thick clotted cream, Kerrygold butter, and berry jam.</p>
+            <div class="card-meta">
+              <span class="tag">Vegetarian</span>
+              <span class="tag">Morning Bake</span>
+            </div>
+            <button class="btn-card-action view-details-btn" data-item="scones">View Item Details ➔</button>
+          </div>
+        </div>
+
+        <!-- Item 5: Brown Bread -->
+        <div class="menu-card" data-category="bakery">
+          <div class="card-badge gold">Famous Recipe</div>
+          <div class="card-image-wrap">
+            <img src="images/soda_bread.png" alt="Traditional Irish Brown Soda Bread" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title-row">
+              <h3>Traditional Irish Brown Soda Bread</h3>
+              <span class="price">€3.50</span>
+            </div>
+            <p class="card-desc">Our iconic dark brown buttermilk soda bread baked fresh in-house every morning. Rich, wholesome, and delicious.</p>
+            <div class="card-meta">
+              <span class="tag">House Specialty</span>
+              <span class="tag">No Preservatives</span>
+            </div>
+            <button class="btn-card-action view-details-btn" data-item="brown-bread">View Item Details ➔</button>
+          </div>
+        </div>
+
+        <!-- Item 6: Salads -->
+        <div class="menu-card" data-category="deli">
+          <div class="card-badge">Fresh Selection</div>
+          <div class="card-image-wrap">
+            <img src="images/salads.png" alt="Gourmet Market Salad Plate" class="card-img">
+          </div>
+          <div class="card-body">
+            <div class="card-title-row">
+              <h3>Gourmet Market Salad Plate</h3>
+              <span class="price">€7.90</span>
+            </div>
+            <p class="card-desc">Choice of fresh seasonal deli salads: Roasted Sweet Potato & Feta, Quinoa, Coleslaw, or Pesto Pasta.</p>
+            <div class="card-meta">
+              <span class="tag">Healthy & Fresh</span>
+              <span class="tag">Gluten-Free Options</span>
+            </div>
+            <button class="btn-card-action view-details-btn" data-item="salads">View Item Details ➔</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooftop Patio Section -->
+  <section class="section patio-section" id="patio">
+    <div class="container patio-container">
+      <div class="patio-visual">
+        <img src="images/patio.png" alt="Rooftop Outdoor Patio Dining at Baxter & Greene" class="patio-img">
+        <div class="patio-floating-tag">
+          <span>🌤️ Rooftop Patio Terrace</span>
+          <strong>Top Floor, Dunnes Stores</strong>
+        </div>
+      </div>
+
+      <div class="patio-content">
+        <span class="section-tag">Outdoor Atmosphere</span>
+        <h2 class="section-title">Sunlit Rooftop <span class="highlight-serif">Patio Dining</span></h2>
+        <p class="patio-lead">
+          Enjoy your coffee or lunch out in the fresh air. Our top-floor terrace offers open outdoor seating surrounded by greenery and urban sky views.
+        </p>
+
+        <div class="patio-highlights">
+          <div class="patio-item">
+            <div class="patio-icon">🌿</div>
+            <div class="patio-desc">
+              <strong>Spacious & Immaculate Seating</strong>
+              <p>Generous table spacing, clean cafeteria-style comfort, perfect for shoppers or business breaks.</p>
+            </div>
+          </div>
+
+          <div class="patio-item">
+            <div class="patio-icon">☀️</div>
+            <div class="patio-desc">
+              <strong>Outdoor Patio Weather Permitting</strong>
+              <p>Catch natural sunlight during clear Dublin afternoons right above Henry Street.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="patio-actions">
+          <a href="https://www.google.com/maps/search/?api=1&query=Baxter+%26+Greene+Dunnes+Stores+Henry+Street+Dublin" target="_blank" class="btn btn-gold btn-lg">
+            <span>Get Google Maps Directions</span>
+            <span class="btn-icon">🗺️</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verified Google Reviews Section -->
+  <section class="section reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Google Maps Reviews</span>
+        <h2 class="section-title">Loved by Locals <span class="highlight-serif">& Travelers</span></h2>
+        <div class="rating-overview-chip">
+          <span class="big-stars">★ 3.9 / 5</span>
+          <span class="review-count">Based on 77 Verified Google Reviews</span>
+        </div>
+      </div>
+
+      <!-- Reviews Grid Cards -->
+      <div class="reviews-grid">
+
+        <!-- Review 1: Dw 65 -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar">Dw</div>
+            <div class="reviewer-info">
+              <h4>Dw 65</h4>
+              <span class="badge-guide">Local Guide · 159 reviews · 287 photos</span>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <div class="review-body">
+            <p class="review-text">
+              "Super! I had breakfast here five times in March '23. Excellent consistently. Great value at under €6 for five cooked items plus a beverage and either toast or bread. I have to mention that the brown bread is delicious. It's a bright place on the top floor above Dunnes Stores. Outdoor patio dining is also possible subject to weather."
+            </p>
+          </div>
+          <div class="review-footer">
+            <span class="review-date">March 2023 · Verified Visitor</span>
+            <span class="like-count">👍 1</span>
+          </div>
+        </div>
+
+        <!-- Review 2: Liz -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar avatar-purple">LZ</div>
+            <div class="reviewer-info">
+              <h4>Liz</h4>
+              <span class="badge-guide">Local Guide · 44 reviews · 79 photos</span>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <div class="review-body">
+            <p class="review-text">
+              "If you’re looking for a non-over priced Irish breakfast, this place does the trick. Five items for less than €6. The cafeteria like space is spacious and clean. Great spot if you’re looking for something casual. Not what you’d expect to find on the top floor of a Dunnes."
+            </p>
+          </div>
+          <div class="review-footer">
+            <span class="review-date">Verified Local Guide</span>
+            <span class="like-count">👍 2</span>
+          </div>
+        </div>
+
+        <!-- Review 3: Francis Barcelo -->
+        <div class="review-card">
+          <div class="review-header">
+            <div class="reviewer-avatar avatar-green">FB</div>
+            <div class="reviewer-info">
+              <h4>Francis Barcelo</h4>
+              <span class="badge-guide">Local Guide · 76 reviews · 423 photos</span>
+            </div>
+            <div class="review-stars">★★★★★</div>
+          </div>
+          <div class="review-body">
+            <p class="review-text">
+              "Whether you are a tourist or living in Dublin Ireland. This restaurant has all the comfort foods you crave for. Highly recommended!"
+            </p>
+          </div>
+          <div class="review-footer">
+            <span class="review-date">Verified Local Guide</span>
+            <span class="like-count">👍 1</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Interactive Google Maps Section -->
+  <section class="section location-section" id="location">
+    <div class="container">
+      <div class="location-grid">
+
+        <div class="location-info">
+          <span class="section-tag">Visit Us In Dublin</span>
+          <h2 class="section-title">Location & <span class="highlight-serif">Google Maps Directions</span></h2>
+          <p class="location-desc">
+            We are located on the <strong>top floor</strong> of <strong>Dunnes Stores Henry Street</strong> inside the Central Mall of Ilac Shopping Centre.
+          </p>
+
+          <div class="info-list">
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div class="info-details">
+                <strong>Address:</strong>
+                <span>Unit 10/12, Central Mall, Ilac Centre, Henry St, Dublin 1, D01 A213, Ireland</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon">🏬</span>
+              <div class="info-details">
+                <strong>Located In:</strong>
+                <span>Dunnes Stores Henry Street (Top Floor via Central Escalators)</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon">🕒</span>
+              <div class="info-details">
+                <strong>Opening Hours:</strong>
+                <span>Open Daily · Closes 5:30 PM</span>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon">📞</span>
+              <div class="info-details">
+                <strong>Phone:</strong>
+                <a href="tel:+35315653580" class="phone-link">+353 1 565 3580</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon">🗺️</span>
+              <div class="info-details">
+                <strong>Plus Code:</strong>
+                <span>8PXM+WW Dublin 1, Ireland</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-actions">
+            <a href="https://www.google.com/maps/search/?api=1&query=Baxter+%26+Greene+Dunnes+Stores+Henry+Street+Dublin" target="_blank" class="btn btn-primary btn-lg">
+              <span>Open in Google Maps</span>
+              <span class="btn-icon">↗</span>
+            </a>
+            <a href="tel:+35315653580" class="btn btn-outline-dark btn-lg">Call Store</a>
+          </div>
+        </div>
+
+        <!-- Embedded Real Google Map Frame -->
+        <div class="map-card-container">
+          <div class="map-card">
+            <div class="map-header">
+              <div class="map-title">
+                <strong>Baxter & Greene — Dublin 1</strong>
+                <span>Dunnes Stores Henry Street</span>
+              </div>
+              <a href="https://www.google.com/maps/search/?api=1&query=Baxter+%26+Greene+Dunnes+Stores+Henry+Street+Dublin" target="_blank" class="live-pill" style="color:#fff; text-decoration:none;">Open Map ↗</a>
+            </div>
+
+            <!-- Interactive Google Maps Iframe -->
+            <div class="google-map-wrap">
+              <iframe 
+                src="https://maps.google.com/maps?q=Baxter%20%26%20Greene%20Unit%2010%2F12%20Central%20Mall%20Ilac%20Centre%20Henry%20St%20Dublin%201&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                width="100%" 
+                height="320" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Baxter & Greene Google Map">
+              </iframe>
+            </div>
+
+            <div class="map-footer-guide">
+              <h4>Easy Store Navigation:</h4>
+              <ol class="guide-steps">
+                <li>Enter Dunnes Stores main entrance on Henry Street or Ilac Centre.</li>
+                <li>Take the central escalator or elevator to the <strong>Top Floor</strong>.</li>
+                <li>Baxter & Greene Market Deli is right next to the outdoor rooftop patio.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer with SVG Facebook & Instagram Icons and Official Logo -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <img src="images/logo.jpg" alt="Baxter & Greene Market Deli Logo" class="brand-logo-img">
+          <div class="brand-text">
+            <span class="brand-name">BAXTER & GREENE</span>
+            <span class="brand-sub">MARKET DELI & CAFE</span>
+          </div>
+        </div>
+        <p class="footer-tagline">Dublin's premier top-floor market deli, serving wholesome food, artisanal baked goods, and cooked Irish breakfasts.</p>
+        
+        <!-- Social Icons Row -->
+        <div class="social-icons-wrapper">
+          <a href="https://facebook.com" target="_blank" class="social-icon-btn facebook" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/baxterandgreene/" target="_blank" class="social-icon-btn instagram" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Our Story</a></li>
+          <li><a href="#menu">Deli Menu</a></li>
+          <li><a href="#patio">Rooftop Patio</a></li>
+          <li><a href="#reviews">Google Reviews</a></li>
+          <li><a href="#location">Find Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-col">
+        <h4>Opening Hours</h4>
+        <ul class="hours-list">
+          <li><span>Monday - Saturday:</span> <strong>8:00 AM - 5:30 PM</strong></li>
+          <li><span>Sunday:</span> <strong>10:00 AM - 5:30 PM</strong></li>
+          <li><span>Patio Terrace:</span> <strong>Open Daily (Weather Permitting)</strong></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact-col">
+        <h4>Contact & Location</h4>
+        <p>Unit 10/12, Central Mall, Ilac Centre, Henry St, Dublin 1</p>
+        <p>Phone: <a href="tel:+35315653580">+353 1 565 3580</a></p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-content">
+        <p>© <span id="yearSpan">2026</span> Baxter & Greene Market Deli & Cafe. All rights reserved.</p>
+        <p class="footer-credit">Clean, modern aesthetic design.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Call Us Action Button -->
+  <a href="tel:+35315653580" class="floating-call-btn" aria-label="Call Baxter & Greene">
+    <span class="call-btn-icon">📞</span>
+    <span class="call-btn-text">Call Us</span>
+  </a>
+
+  <!-- Item Details Modal -->
+  <div class="modal-overlay" id="itemModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalCloseBtn">✕</button>
+      <div class="modal-body" id="modalContent">
+        <!-- Dynamic Modal Content populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Takeaway Pre-Order Modal -->
+  <div class="modal-overlay" id="takeawayModal">
+    <div class="modal-box modal-lg">
+      <button class="modal-close" id="takeawayCloseBtn">✕</button>
+      <div class="modal-header-custom">
+        <h2>Order Takeaway / Pickup</h2>
+        <p>Collection at Dunnes Stores Henry Street (Top Floor Market Deli)</p>
+      </div>
+      <form class="takeaway-form" id="takeawayForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="custName">Your Name *</label>
+            <input type="text" id="custName" placeholder="e.g. Sarah O'Connor" required>
+          </div>
+          <div class="form-group">
+            <label for="custPhone">Phone Number *</label>
+            <input type="tel" id="custPhone" placeholder="e.g. +353 87 123 4567" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="pickupTime">Desired Pickup Time</label>
+            <select id="pickupTime">
+              <option>In 15-20 Minutes</option>
+              <option>In 30 Minutes</option>
+              <option>In 1 Hour</option>
+              <option>Tomorrow Morning (8:30 AM)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="orderType">Dining Preference</label>
+            <select id="orderType">
+              <option>Takeaway (Packed to Go)</option>
+              <option>Dine-in (Casual Table)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="orderNotes">Order Details</label>
+          <textarea id="orderNotes" rows="3" placeholder="e.g. 1x Full Irish 5-Item Breakfast, 1x Coconut Cappuccino..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-block">Submit Pickup Request</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
